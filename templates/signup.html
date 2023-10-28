@@ -1,0 +1,76 @@
+{%extends "layout.html" %}
+{% block body %}
+
+  <h1 class="text-center">{{params["contact_name"]}}</h1>
+  <div class="container my-4">
+    <form  action="/signup.html" method="post">
+        <div class="row g-3">
+          <label for="validationDefault01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="validationDefault01" placeholder="First Name"  name="Fname" required>
+        </div>
+        <br>
+        <div class="row g-3">
+          <label for="validationDefault02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="validationDefault02"  placeholder="Last Name" name="Lname" required>
+        </div>
+        <br>
+        <div class="row g-3">
+          <label for="validationDefaultUsername" class="form-label">Email</label>
+          <div class="input-group">
+            
+            <input type="email" class="form-control" id="validationDefaultUsername" name="Uname" placeholder="Please Enter the Email ID"  aria-describedby="inputGroupPrepend2" required>
+          </div>
+        </div>
+
+        <br>
+        <div class="row g-3">
+          <label for="validationDefault02" class="form-label">Password</label>
+          <input type="password" class="form-control" id="validationDefault02" name="myPass" placeholder="Please Enter your password" name="Lname" required>
+        </div>
+        <br>
+        <div class="row g-3">
+          <label for="validationDefault03" class="form-label">City</label>
+          <input type="text" class="form-control" id="validationDefault03" name="city"  placeholder="Enter your City Name" required>
+        </div>
+        <br>
+        <div class="row g-3">
+          <label for="validationDefault04" class="form-label">State</label>
+          <select class="form-select" id="validationDefault04" name="state" required>
+            <option selected disabled value="">Choose...</option>
+            <option>Uttar Pradesh </option>
+            <option>West Bengal</option>
+            <option>Gujarat</option>
+            <option>Rajasthan</option>
+            <option>Bihar</option>
+            <option>Jharkhand</option>
+            <option>Maharastra</option>
+            <option>Madhya Pradesh</option>
+            <option>Tamil Nadu</option>
+            <option>Punjab</option>
+          </select>
+        </div>
+        <br>
+        <div class="row g-3">
+          <label for="validationDefault05" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="validationDefault05" placeholder="Zip Code" name="zipCode" required>
+        </div>
+        <br>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+            <label class="form-check-label" for="invalidCheck2">
+              Agree to terms and conditions
+            </label>
+          </div>
+        </div>
+        <br>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+        <br>
+      </form>
+
+
+</div>
+
+{% endblock %}

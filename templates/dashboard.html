@@ -1,0 +1,27 @@
+{%extends 'layout.html' %}
+{% block body %}
+
+
+<div class="container my-5">
+    <form action="/uploader" method="post" enctype="multipart/form-data">
+        <label for="myfile">Upload Your File      </label>
+        <input class="bg-blue" type="file" name="myfile" id="myfile">
+        <button type="submit" class="btn btn-primary">Upload</button>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

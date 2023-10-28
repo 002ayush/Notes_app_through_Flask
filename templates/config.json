@@ -1,0 +1,15 @@
+{
+    "params":
+    {
+        "local_server":"True",
+        "local_uri":"mysql://root:@localhost/contact",
+        "prod_uri" : "mysql://root:@localhost/contact",
+        "contact_name":"Contact name",
+        "titleTool": "Notes App",
+        "gmail-user" : "hello@gmail.com",
+        "gmail-password" : "******",
+        "no_of_posts" : 1,
+        "upload_location" : "C:\\Users\\Mishra\\Desktop\\Flask Tutorial\\static\\"
+        
+    }
+}

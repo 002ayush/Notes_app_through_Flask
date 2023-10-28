@@ -1,0 +1,17 @@
+{%extends "layout.html" %}
+{% block body %}
+<div class="container my-5">
+
+    <form action="/modals.html" method="post">
+
+        <label for="confirm" style="font-size: 20px; font-weight: bold;">Enter the Verification Link</label>
+        <input type="number" name="confirm" id="confirm" class="form-control"  placeholder="Enter the Verification link" required>
+        <br>
+        <br>
+        
+        <button type="submit" class="btn btn-primary" style="display: block;margin: auto;">Confirm Verification Link</button>
+    </form>
+
+</div>
+
+{% endblock %}
